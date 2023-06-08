@@ -1,2 +1,47 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<h1 class="text-center mt-3">Contacto</h1>
+<p class="card-text">Si tienes alguna pregunta o necesitas más información, no dudes en contactarme. Estoy emocionado por compartir mi conocimiento y trabajar en futuros proyectos. ¡Gracias por tu atención!</p>
+
+<!-- Se agrega formulario de contacto -->
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputNombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="inputNombre">
+    </div>
+    <div class="col-md-6">
+      <label for="inputApellidos" class="form-label">Apellidos</label>
+      <input type="text" class="form-control" id="inputApellidos">
+    </div>
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCelular" class="form-label">Celular</label>
+      <input type="text" class="form-control" id="inputCelular" placeholder="+(569 cod.Páis) número">
+    </div>
+    <div class="col-md-6">
+      <label for="inputMotivo" class="form-label">Motivo</label>
+      <select id="inputMotivo" class="form-select">
+        <option selected>Quiero un Proyecto Web desde 0</option>
+        <option>Quiero actualizar mi Sitio Web</option>
+        <option>Quiero una asesoria</option>
+        <option>Contacto</option>
+        <option>Otros..</option>
+      </select>
+    </div>
+    <div class="col-12">
+        <label for="inputMensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="inputMensaje" placeholder="Escribe tu mensaje.." rows="5"></textarea>
+      </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          No soy un Robot
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
